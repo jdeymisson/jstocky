@@ -1,0 +1,438 @@
+@charset "UTF-8";
+/* Mixins e Variáveis */
+/* reset GERAL */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.container {
+  max-width: 968px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* login */
+header {
+  padding-top: 30px;
+  margin-bottom: 60px;
+}
+
+body {
+  background: #F7C82E;
+}
+
+.login {
+  max-width: 760px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #232323;
+  border-radius: 10px;
+  padding: 56px 10px 20px 10px;
+  -webkit-box-shadow: 0px 0px 10px #454040;
+          box-shadow: 0px 0px 10px #454040;
+}
+
+.content-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-left h1 {
+  font-size: 1.25rem;
+  max-width: 350px;
+  color: #fff;
+}
+
+.content-left .img-controle {
+  max-width: 280px;
+}
+
+.content-left .img-controle img {
+  width: 100%;
+}
+
+.content-login {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-login h1 {
+  position: relative;
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.content-login h1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 43%;
+  height: 4px;
+  width: 60px;
+  background: #F7C82E;
+}
+
+.content-login label {
+  display: none;
+  visibility: transparent;
+}
+
+.content-login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-login form .input-field {
+  width: 75%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.content-login form .input-field input {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  font-size: 1rem;
+  padding: 0 10px;
+  outline: none;
+}
+
+.content-login form .input-field img {
+  width: 20px;
+}
+
+.content-login form .input-button {
+  position: relative;
+  width: 75%;
+  height: 40px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.content-login form .input-button input[type="submit"] {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #F7C82E;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.content-login form .input-button input[type="submit"]:hover {
+  background: #F7D259;
+}
+
+.content-login form .input-button img {
+  position: absolute;
+  width: 22px;
+  right: 5%;
+  display: none;
+}
+
+.content-login form .input-button:hover img {
+  display: block;
+}
+
+.content-login form h3 {
+  font-size: 1rem;
+  color: #F7D259;
+}
+
+/* Home */
+body.body-home {
+  background: #232323;
+  font-size: 1.25rem;
+}
+
+header.header-home {
+  height: 100px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  background: #F7C82E;
+  -webkit-box-shadow: 0px 5px 8px #000;
+          box-shadow: 0px 5px 8px #000;
+}
+
+header.header-home .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header.header-home .container nav a {
+  color: #232323;
+  font-size: 1rem;
+  padding: 10px 20px;
+  font-weight: bold;
+  -webkit-transition: background .5s;
+  transition: background .5s;
+  border-radius: 5px;
+}
+
+header.header-home .container nav a:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.busca-home {
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.busca-home input {
+  padding: 30px 20px;
+  border: 0;
+  border-radius: 3px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.main-home {
+  background: #F7C82E;
+  border-radius: 3px;
+}
+
+.table-home {
+  width: 100%;
+  padding-bottom: 10px;
+  font-size: 1rem;
+}
+
+.table-home thead {
+  background: #232323;
+  color: #fff;
+}
+
+.table-home thead th {
+  padding: 10px 20px;
+}
+
+.table-home tbody {
+  -webkit-transition: background .5s;
+  transition: background .5s;
+  text-align: center;
+}
+
+.table-home tbody td {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.table-home tbody td .content-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #232323;
+  gap: 20px;
+}
+
+.table-home tbody:hover {
+  background: white;
+}
+
+/* adicionar produto */
+body .header-add {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.container-add {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container-add .form-add {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+.container-add .form-add > label {
+  font-size: 1rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.container-add .form-add input {
+  width: 100%;
+  padding: 5px 5px;
+  border: 0;
+  outline: none;
+  border-radius: 3px;
+}
+
+.container-add .form-add input[type="submit"] {
+  margin-top: 10px;
+  padding: 10px 0px;
+  border: 0;
+  background: #232323;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.container-add .form-add input[type="submit"]:hover {
+  opacity: .9;
+}
+
+/* relatório */
+.relatorioc {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.relatorioc .nav-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.relatorioc .nav-top a {
+  color: #232323;
+  padding: 10px 20px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-transition: background .5s;
+  transition: background .5s;
+}
+
+.relatorioc .nav-top a:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+/*# sourceMappingURL=style.css.map */
